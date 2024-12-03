@@ -1,4 +1,8 @@
 import sys
+
+folder1_path = os.path.abspath(os.path.join(os.path.dirname(__file__), '..'))
+sys.path.insert(0, folder1_path)
+
 import kernel
 import ekernel
 
