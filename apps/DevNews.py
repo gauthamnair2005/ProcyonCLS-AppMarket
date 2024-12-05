@@ -1,5 +1,6 @@
 import sys
 import os
+import requests
 
 folder1_path = os.path.abspath(os.path.join(os.path.dirname(__file__), '..'))
 sys.path.insert(0, folder1_path)
@@ -18,8 +19,8 @@ def fetchNOTD():
 
 def main():
     if len(sys.argv) == 2:
-        if sys.argv[1] == "v1.4.0":
-            ekernel.splashScreen("ProcyonCLS Dev News", "1.0")
+        if sys.argv[1] >= "v1.4.0":
+            ekernel.splashScreen("ProcyonCLS Dev News", "Version 1.1 | Procyonis Computing")
             ekernel.printHeader("Dev News")
             kernel.printInfo("Today's News")
             kernel.printInfo("----------------------")
