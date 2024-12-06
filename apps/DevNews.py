@@ -5,6 +5,8 @@ import requests
 folder1_path = os.path.abspath(os.path.join(os.path.dirname(__file__), '..'))
 sys.path.insert(0, folder1_path)
 
+__version__ = "1.5.0"
+
 import kernel
 import ekernel
 
