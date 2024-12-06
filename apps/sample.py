@@ -6,6 +6,8 @@ sys.path.insert(0, folder1_path)
 import kernel
 import ekernel
 
+__version__ = "1.5.0"
+
 def main():
     if len(sys.argv) == 3:
         if sys.argv[1] >= "1.5.0":
