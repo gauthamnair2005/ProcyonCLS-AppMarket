@@ -20,7 +20,7 @@ def fetchNOTD():
         return None
 
 def main():
-    if len(sys.argv) == 2:
+    if len(sys.argv) >= 1:
         if sys.argv[1] >= "1.5.0":
             ekernel.splashScreen("ProcyonCLS Dev News", "Version 1.1 | Procyonis Computing")
             ekernel.printHeader("Dev News")
