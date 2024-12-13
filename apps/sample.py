@@ -1,4 +1,5 @@
 import sys
+import os
 
 folder1_path = os.path.abspath(os.path.join(os.path.dirname(__file__), '..'))
 sys.path.insert(0, folder1_path)
@@ -6,13 +7,13 @@ sys.path.insert(0, folder1_path)
 import kernel
 import ekernel
 
-__version__ = "1.5.0"
+__version__ = "2.0.4"
 
 def main():
     if len(sys.argv) == 3:
-        if sys.argv[1] >= "1.5.0":
+        if sys.argv[1] >= "2.0.0":
             if sys.argv[2] == "False":
-                ekernel.splashScreen("App Sample for ProcyonCLS", "Version 1.5.0 Compatible App 0.1")
+                ekernel.splashScreen("App Sample for ProcyonCLS", "Version 2.0.0 Compatible App 2.0.4")
                 ekernel.printHeader("Sample")
                 kernel.println("Hello, World!")
                 ekernel.prettyPrint("Hello, World!")
